@@ -6,8 +6,8 @@ import Link from 'next/link';
 
 export default function FooterPage() {
   return (
-    <section className="relative mt-20 ">
-      <div className="flex gap-4 absolute bottom-0 lg:bottom-8 lg:left-80 lg:w-fit w-full justify-center ">
+    <section className=" mt-2 ">
+      <div className="flex gap-4 justify-center ">
         <Link
           href={'https://www.linkedin.com/in/wael-kamira-9b709726b/'}
           target="_blank"

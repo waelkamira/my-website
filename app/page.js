@@ -1,10 +1,11 @@
 import Image from 'next/image';
 
 import Hero from '../components/hero/Hero';
+
 export default function Home() {
   return (
-    <main className="bg-secondary flex justify-center">
-      <div className="flex flex-col-reverse items-center lg:justify-center lg:flex-row w-8/12 ">
+    <main className="page flex justify-center bg-secondary">
+      <div className="flex flex-col-reverse items-center lg:justify-between lg:flex-row ">
         <div>
           <Hero />
         </div>

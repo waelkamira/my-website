@@ -142,3 +142,46 @@ a {
     width: 100%;
   }
 }
+
+.page {
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  animation-name: page;
+  animation-duration: 8s;
+  /* animation-delay: 1s; */
+  /* animation-direction: normal; */
+}
+
+@keyframes page {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.item {
+  position: relative;
+  /* background: red; */
+  width: 100%;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.item::before {
+  position: absolute;
+  content: '';
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(4, 174, 241, 0.158);
+  width: 100%;
+  z-index: -1;
+  transition: 1s;
+}
+
+.item:hover::before {
+  width: 0;
+}

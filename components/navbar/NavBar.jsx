@@ -10,7 +10,7 @@ import { IoIosContacts } from 'react-icons/io';
 import { usePathname } from 'next/navigation';
 export default function NavBarPage() {
   const path = usePathname();
-  console.log(path);
+
   const [isOpen, setIsOpen] = useState(false);
   return (
     <section
