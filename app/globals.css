@@ -1,3 +1,144 @@
-@tailwind base;
+@import url('https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap')
+  @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  @apply bg-secondary font-body  text-white;
+}
+
+a {
+  @apply flex gap-2 items-center text-white no-underline;
+}
+
+.active {
+  @apply text-primary;
+}
+
+.stroke {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgb(4, 172, 241);
+}
+
+.btn {
+  position: relative;
+  background: rgb(4, 172, 241);
+  color: rgb(9, 27, 41);
+  height: 100%;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.btn::before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background: rgb(9, 27, 41);
+  color: rgb(4, 172, 241);
+  height: 100%;
+  z-index: -1;
+  transition: 1s;
+}
+.btn:hover::before {
+  width: 100%;
+}
+
+.btn2 {
+  position: relative;
+  background: rgb(9, 27, 41);
+  color: rgb(4, 172, 241);
+  height: 100%;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.btn2::before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: rgb(4, 172, 241);
+  height: 100%;
+  z-index: -1;
+  transition: 1s;
+}
+.btn2:hover::before {
+  width: 100%;
+}
+
+.fullStack {
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  color: rgb(4, 172, 241);
+  border-right: 2px solid rgb(4, 172, 241);
+  animation-name: fullStack;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+  animation-delay: 1s;
+}
+
+@keyframes fullStack {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.icon {
+  position: relative;
+  background: rgb(9, 27, 41);
+  color: rgb(4, 172, 241);
+  height: 100%;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.icon::before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: rgb(4, 172, 241);
+  height: 100%;
+  z-index: -1;
+  transition: 1s;
+}
+.icon:hover::before {
+  width: 100%;
+}
+
+.myNameStroke {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgb(255, 255, 255);
+}
+
+.myName {
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  color: rgb(255, 255, 255);
+  border-right: 2px solid rgb(4, 172, 241);
+  animation-name: myName;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-delay: 1s;
+}
+
+@keyframes myName {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}

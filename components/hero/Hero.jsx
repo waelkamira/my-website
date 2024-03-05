@@ -5,10 +5,21 @@ import Button from '../layout/Button';
 export default function HeroPage() {
   return (
     <section className="mt-8">
-      <div className=" text-white flex flex-col items-center">
-        <div className=" p-4 sm:p-4 sm:pl-0 text-center sm:text-left">
-          <h1>HELLO, I AM WAEL KAMIRA</h1>
-          <h1>FULL STACK DEVELOPER</h1>
+      <div className=" text-white flex flex-col items-center justify-center">
+        <div className="flex flex-col justify-center p-4 sm:p-4 sm:pl-0 text-center sm:text-left">
+          <h1 className="lg:text-6xl lg:font-extrabold mb-0">
+            Hi, I'm Wael Kamira
+          </h1>
+          <div className="mb-12 md:mb-18 lg:mb-24 flex justify-center sm:justify-start">
+            <div className="absolute z-30">
+              <h1 className="fullStack lg:text-4xl lg:font-extrabold text-lg text-nowrap">
+                FULL-STACK DEVELOPER
+              </h1>
+              <h1 className="absolute stroke lg:text-4xl lg:font-extrabold text-transparent text-lg text-nowrap top-0 left-0 z-0 ">
+                FULL-STACK DEVELOPER
+              </h1>
+            </div>
+          </div>
           <p>
             Dear Hiring Manager, Having followed your company's success for
             multiple years, I would welcome the privilege of contributing to
@@ -19,11 +30,8 @@ export default function HeroPage() {
           </p>
         </div>
         <div className="flex gap-4 sm:gap-10 mt-8 mb-4">
-          <Button name={'Hire Me'} className={'bg-primary text-secondary'} />
-          <Button
-            name={"Let's Talk"}
-            className={'bg-secondary text-primary border-2 border-primary'}
-          />
+          <Button name={'Hire Me'} className={' btn hover:text-primary'} />
+          <Button name={"Let's Talk"} className={'btn2 hover:text-secondary'} />
         </div>
       </div>
     </section>

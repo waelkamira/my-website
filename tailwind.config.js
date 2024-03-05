@@ -14,6 +14,12 @@ module.exports = {
       backgroundImage: {
         'my-photo': "url('/my-photo.webp')",
       },
+      fontFamily: {
+        body: ['Protest+Strike&display'],
+      },
+      transitionDuration: {
+        3000: '3000ms',
+      },
     },
   },
   plugins: [],

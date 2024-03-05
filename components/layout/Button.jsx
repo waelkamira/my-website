@@ -5,7 +5,7 @@ export default function Button({ name, className }) {
     <button
       className={
         className +
-        ' rounded-md py-3 px-4  sm:px-8 font-bold w-30 sm:w-40 text-nowrap'
+        ' rounded-md py-3 text-lg font-bold w-32 sm:w-44 text-nowrap font-body sm:text-xl shadow-md'
       }
     >
       {name}
