@@ -37,10 +37,7 @@ export default function HeroPage() {
           >
             <Button name={'Hire Me'} className={' btn hover:text-primary'} />
           </Link>
-          <Link
-            href={'https://www.linkedin.com/in/wael-kamira-9b709726b/'}
-            target={'_blank'}
-          >
+          <Link href={'/contact'}>
             <Button
               name={"Let's Talk"}
               className={'btn2 hover:text-secondary'}

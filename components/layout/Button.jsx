@@ -1,8 +1,14 @@
 import React from 'react';
 
-export default function Button({ name, className, onClick }) {
+export default function Button({
+  name,
+  className = 'btn hover:text-primary',
+  onClick,
+  type,
+}) {
   return (
     <button
+      type={type}
       onClick={onClick}
       className={
         className +

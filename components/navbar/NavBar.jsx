@@ -16,8 +16,8 @@ export default function NavBarPage() {
     <section
       className={
         isOpen
-          ? 'absolute left-0 right-0 m-auto py-8 w-8/12 z-10 inset-0 h-screen'
-          : 'absolute left-0 right-0 m-auto py-8 w-8/12 z-10'
+          ? 'absolute left-0 right-0 m-auto p-8 max-w-7xl z-10 inset-0 h-screen'
+          : 'absolute left-0 right-0 m-auto p-8 max-w-7xl z-10'
       }
       onClick={() => setIsOpen(false)}
     >

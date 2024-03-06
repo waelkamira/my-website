@@ -148,9 +148,7 @@ a {
   height: 100%;
   width: 100%;
   animation-name: page;
-  animation-duration: 8s;
-  /* animation-delay: 1s; */
-  /* animation-direction: normal; */
+  animation-duration: 3s;
 }
 
 @keyframes page {

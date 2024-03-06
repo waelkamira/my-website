@@ -4,7 +4,7 @@ import Link from 'next/link';
 export default function EducationPage() {
   return (
     <section className="page mt-12 pt-4 ">
-      <div className="grid md:grid-cols-2 grid-cols-1 gap-16  w-ful p-8">
+      <div className="grid lg:grid-cols-2 grid-cols-1 gap-16  w-ful p-8">
         <div className="flex flex-col items-center  w-fit">
           <div>
             <h1 className="mb-2 left-4 p-4">Education</h1>
