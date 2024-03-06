@@ -15,7 +15,7 @@ export default function AboutPage() {
             <MainText subText={'About'} mainText={'Me'} />
             <div className="relative h-56 w-56 rounded-full border border-primary outline outline-primary outline-1 outline-offset-8">
               <Image
-                src={'/photo.png'}
+                src={'/photo.jpg'}
                 layout="fill"
                 objectFit="cover"
                 alt="my-photo"
