@@ -9,12 +9,12 @@ export default function Home() {
         <div>
           <Hero />
         </div>
-        <div className="relative h-96 sm:h-screen sm:max-w-[1536px] sm:min-w-[600px] max-w-[1536px] min-w-[320px]">
+        <div className="relative h-72 sm:h-[750px] sm:max-w-[1536px] sm:min-w-[600px] max-w-[1536px] min-w-[320px]">
           <Image
             src={'/my-photo.webp'}
             alt="my photo"
             layout="fill"
-            objectFit="cover"
+            objectFit="contain"
           />
         </div>
       </div>
