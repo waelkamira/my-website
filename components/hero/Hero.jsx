@@ -9,7 +9,7 @@ export default function HeroPage() {
       <div className=" text-white flex flex-col items-center justify-between ">
         <div className="flex flex-col justify-center p-4 sm:p-4 sm:pl-0 text-center sm:text-left ">
           <h1 className="lg:text-6xl lg:font-extrabold mb-0">
-            Hi, I'm Wael Kamira
+            Hi, I am Wael Kamira
           </h1>
           <div className="mb-12 md:mb-18 lg:mb-24 flex justify-center sm:justify-start">
             <div className="absolute z-30">
@@ -22,7 +22,7 @@ export default function HeroPage() {
             </div>
           </div>
           <p>
-            Dear Hiring Manager, Having followed your company's success for
+            Dear Hiring Manager, Having followed your company&apos;s success for
             multiple years, I would welcome the privilege of contributing to
             future growth and success as the new Frontend Developer. I am
             confident that my academic history and aptitude for creative
@@ -39,7 +39,7 @@ export default function HeroPage() {
           </Link>
           <Link href={'/contact'}>
             <Button
-              name={"Let's Talk"}
+              name={<>Let&apos;s Talk</>}
               className={'btn2 hover:text-secondary'}
             />
           </Link>

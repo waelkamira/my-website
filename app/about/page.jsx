@@ -32,9 +32,9 @@ export default function AboutPage() {
           <div>
             {!isOpen && (
               <pre className="leading-8 text-lg line-clamp-3 px-16 text-wrap text-center md:text-left">
-                Hello, I'm{' '}
-                <span className="text-primary text-2xl">Wael Kamira</span> I'm a
-                passionate Full Stack Developer with expertise in crafting
+                Hello, I am{' '}
+                <span className="text-primary text-2xl">Wael Kamira</span> I am
+                a passionate Full Stack Developer with expertise in crafting
                 dynamic web applications. With a solid foundation in{' '}
                 <span className="text-primary">Next.js, Node.js</span>,
                 <span className="text-primary">Tailwind CSS</span>,{' '}
@@ -51,9 +51,9 @@ export default function AboutPage() {
             )}
             {isOpen && (
               <pre className="leading-8 text-lg md:px-16 text-center sm:text-start text-wrap ">
-                Hello, I'm{' '}
-                <span className="text-primary text-2xl">Wael Kamira</span> I'm a
-                passionate Full Stack Developer with expertise in crafting
+                Hello, I am{' '}
+                <span className="text-primary text-2xl">Wael Kamira</span> I am
+                a passionate Full Stack Developer with expertise in crafting
                 dynamic web applications. <br />
                 With a solid foundation in{' '}
                 <span className="text-primary">Next.js, Node.js</span>,
@@ -82,7 +82,7 @@ export default function AboutPage() {
                 working closely with teams to bring ideas to life and deliver
                 exceptional results that exceed expectations.
                 <br /> Continuous Learning: In the fast-paced world of web
-                development, I'm committed to staying ahead of the curve by
+                development, I am committed to staying ahead of the curve by
                 continuously expanding my knowledge and embracing new
                 technologies.
               </pre>
