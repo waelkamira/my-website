@@ -15,15 +15,15 @@ export default function FooterPage() {
           href={'cv wael kamira.docx'}
           className="rounded-full border border-double bottom-4 border-primary my-4 icon"
         >
-          {/* <ImProfile className="text-primary text-2xl hover:text-secondary p-2" /> */}
           <h6 className="text-primary text-lg hover:text-secondary px-[7px] pt-[7.5px] pb-[5px] m-0">
             CV
           </h6>
         </Link>
 
         <Link
-          href={'Cover letter wael kamira.docx'}
+          download
           target="_blank"
+          href={'Cover letter wael kamira.docx'}
           className="rounded-full border border-double bottom-4 border-primary my-4 icon"
         >
           <SlEnvolopeLetter className="text-primary text-2xl hover:text-secondary p-2" />
