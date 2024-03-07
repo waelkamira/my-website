@@ -8,6 +8,8 @@ import { MdCastForEducation } from 'react-icons/md';
 import { GiSkills } from 'react-icons/gi';
 import { IoIosContacts } from 'react-icons/io';
 import { usePathname } from 'next/navigation';
+import { HiMenuAlt1 } from 'react-icons/hi';
+
 export default function NavBarPage() {
   const path = usePathname();
 
@@ -16,18 +18,21 @@ export default function NavBarPage() {
     <section
       className={
         isOpen
-          ? 'absolute left-0 right-0 m-auto p-8 max-w-7xl z-10 inset-0 h-screen'
+          ? 'absolute left-0 right-0 m-auto p-8 max-w-7xl z-10 inset-0 h-screen '
           : 'absolute left-0 right-0 m-auto p-8 max-w-7xl z-10'
       }
       onClick={() => setIsOpen(false)}
     >
-      <div className="md:hidden w-fit" onClick={(e) => e.stopPropagation()}>
-        <div className=" text-primary text-2xl">
-          <IoMdMenu onClick={() => setIsOpen(!isOpen)} />
+      <div className="md:hidden w-fit  " onClick={(e) => e.stopPropagation()}>
+        <div
+          className=" text-primary text-2xl "
+          onClick={() => setIsOpen(!isOpen)}
+        >
+          {isOpen ? <HiMenuAlt1 /> : <IoMdMenu />}
         </div>
         <div>
           {isOpen && (
-            <div className="flex flex-col gap-4 ml-6 ">
+            <div className="flex flex-col gap-4 ml-6 p-4 bg-secondary rounded-lg border border-solid border-primary">
               <Link
                 className={path === '/' ? ' active' : ' '}
                 href={'/'}
