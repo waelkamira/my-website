@@ -11,6 +11,7 @@ export default function Home() {
         </div>
         <div className="relative h-72 sm:h-[750px] sm:max-w-[1536px] sm:min-w-[600px] max-w-[1536px] min-w-[320px]">
           <Image
+            priority
             src={'/my-photo.webp'}
             alt="my photo"
             layout="fill"
